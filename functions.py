@@ -28,9 +28,10 @@ def add_student(name, student_id=332):
 
 def var_args(name, *kwargs):
     print(name)
+    print(kwargs[description])
 
 students_list = get_students_titlecase()
 
 add_student(name = "Mark", student_id = 15)
 
-var_args("Mark","Loves python", None, "Hello", True)
+var_args("Mark",description = "Loves python", feedback = None, subscriber = True)
